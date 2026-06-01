@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using TestWpfApp.Data;
 using TestWpfApp.Model;
 
@@ -21,8 +22,7 @@ namespace TestWpfApp.Service
                     .FirstOrDefault(u => u.Login == login && u.Password == password);
                 if (user == null) return null;
                 return user;
-  
-            }
+            }   
         }
     }
 }
