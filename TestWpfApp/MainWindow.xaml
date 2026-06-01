@@ -1,0 +1,22 @@
+﻿<Window x:Class="TestWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="215" Width="255">
+    <Grid Background="Chartreuse">
+            <Border BorderBrush="White" BorderThickness="3"/>
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="Логин"/>
+            <TextBox x:Name="LogBox" TextWrapping="Wrap" Text="94d5ous@gmail.com" Width="217"/>
+            <TextBlock TextWrapping="Wrap" Text="Пароль"/>
+            <PasswordBox x:Name="PasBox" Width="212" Password="uzWC67"/>
+            <Button Content="Авторизоваться" Click="Button_Click" Background="MediumSpringGreen"/>
+            <Button Content="Как гость" Background="MediumSpringGreen"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
